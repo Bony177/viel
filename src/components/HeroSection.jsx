@@ -53,19 +53,13 @@ function HeroSection() {
 
           <div className="hero-boxes">
             <div className="hero-box">
-              <h3>Premium Audio</h3>
-              <p>
-                Experience immersive sound with precision-engineered wireless
-                earphones designed for everyday life.
-              </p>
+              <h3>P</h3>
+              <p>Exp</p>
             </div>
 
             <div className="hero-box">
               <h3>Designed for Comfort</h3>
-              <p>
-                Lightweight, ergonomic, and built for all-day listening with
-                crystal clear audio quality.
-              </p>
+              <p>Lig</p>
             </div>
           </div>
         </div>
