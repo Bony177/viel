@@ -9,7 +9,7 @@ import * as THREE from "three";
 const SURFACE = {
   WIDTH: 18,
   HEIGHT: 10,
-  SEGMENTS_X: 128,
+  SEGMENTS_X: 200,
   SEGMENTS_Y: 72,
 };
 
