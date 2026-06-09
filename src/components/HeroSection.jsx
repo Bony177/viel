@@ -3,6 +3,7 @@ import "./HeroSection.css";
 import bgImage from "../assets/images/first-background.webp";
 import earphoneVideo from "../assets/videos/earphone1.webm";
 import BlackLiquid from "./BlackLiquid";
+import backgroundBeam from "../assets/videos/background1v.webm";
 
 const BLACK_LIQUID_LAYOUT = {
   width: "100%",
@@ -37,6 +38,11 @@ function HeroSection() {
         backgroundImage: `url(${bgImage})`,
       }}
     >
+      <div className="beam-video-wrapper">
+        <video className="beam-video" autoPlay muted loop playsInline>
+          <source src={backgroundBeam} type="video/webm" />
+        </video>
+      </div>
       <div className="hero-liquid" style={heroLiquidStyle}>
         <BlackLiquid />
       </div>
