@@ -1,0 +1,55 @@
+.dust-container {
+  position: absolute;
+
+  left: 50%;
+  top: 70%;
+
+  width: 400px;
+  height: 100px;
+
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+
+  z-index: 6;
+
+  overflow: hidden;
+}
+
+.dust-particle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  background: rgb(0, 0, 0);
+
+  filter: blur(0.1px);
+
+  animation: floatDust linear infinite;
+}
+
+@keyframes floatDust {
+  0% {
+    transform:
+      translateY(0px)
+      translateX(0px);
+
+    opacity: 0;
+  }
+
+  10% {
+    opacity: inherit;
+  }
+
+  90% {
+    opacity: inherit;
+  }
+
+  100% {
+    transform:
+      translateY(-120px)
+      translateX(40px);
+
+    opacity: 0;
+  }
+}

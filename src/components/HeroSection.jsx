@@ -5,6 +5,7 @@ import earphoneVideo from "../assets/videos/earphone1.webm";
 import BlackLiquid from "./BlackLiquid";
 import backgroundBeam from "../assets/videos/background1v.webm";
 import Navbar from "./Navbar";
+import DustParticles from "./DustParticles";
 
 const BLACK_LIQUID_LAYOUT = {
   width: "100%",
@@ -49,6 +50,7 @@ function HeroSection() {
         <BlackLiquid />
       </div>
       <div className="light-source" />
+      <DustParticles count={400} />
       <div className="video-wrapper">
         <video className="earphone-video" autoPlay muted loop playsInline>
           <source src={earphoneVideo} type="video/webm" />
