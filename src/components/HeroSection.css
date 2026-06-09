@@ -82,8 +82,8 @@
 
   object-fit: cover;
 
-  opacity: 0.45;
-  z-index: 4;
+  opacity: 0.25;
+  z-index: 7;
 
 
   .beam-video {
@@ -107,12 +107,46 @@
 
 /* Video */
 
+.light-source {
+  position: absolute;
+
+  left: 52%;
+  top: 59%;
+  opacity: 0.8;
+
+  width: 500px;
+  height: 500px;
+
+  transform: translate(-50%, -50%);
+
+  background: radial-gradient(
+    circle,
+    rgba(255,255,255,1) 0%,
+    rgba(255,255,255,0.8) 10%,
+    rgba(255,255,255,0.4) 25%,
+    rgba(255,255,255,0.15) 50%,
+    transparent 100%
+  );
+
+  filter: blur(80px);
+
+  mix-blend-mode: screen;
+
+  z-index: 4;
+
+  pointer-events: none;
+}
+
 .earphone-video {
   width: min(70vw, 900px);
 
   height: auto;
 
   object-fit: contain;
+    filter:
+    brightness(1.2)
+    contrast(1.5)
+    saturate(0.7);
 
   /* EDGE FADE */
 

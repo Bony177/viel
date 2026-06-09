@@ -1,0 +1,118 @@
+.navbar {
+  position: absolute;
+
+  box-sizing: border-box;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 12px 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  z-index: 100;
+}
+
+/* LOGO */
+
+.logo {
+  color: white;
+
+  font-size: 2rem;
+
+  letter-spacing: 12px;
+
+  font-weight: 300;
+
+  user-select: none;
+}
+
+/* CENTER LINKS */
+
+.nav-links {
+  display: flex;
+
+  gap: 60px;
+}
+
+.nav-links a {
+  position: relative;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  text-decoration: none;
+
+  font-size: 1rem;
+
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.nav-links a.active {
+  color: white;
+}
+
+/* ACTIVE UNDERLINE */
+
+.nav-links a.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -8px;
+
+  width: 100%;
+  height: 2px;
+
+  background: white;
+}
+
+/* RIGHT SIDE */
+
+.nav-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: white;
+}
+
+.cart-icon {
+  width: 22px;
+
+  height: 22px;
+}
+
+.cart-count {
+  width: 28px;
+
+  height: 28px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  color: black;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 0.8rem;
+
+  font-weight: 600;
+}
