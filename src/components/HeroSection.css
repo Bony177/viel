@@ -259,7 +259,7 @@
 }
 
 .hero-box p {
-  font-size: clamp(0.4rem, 1.2vw, 1.35rem);
+  font-size: clamp(0.4rem, 1vw, 1.35rem);
   line-height: 1.7;
   opacity: 0.85;
 }
