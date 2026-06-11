@@ -212,7 +212,7 @@
 
 .hero-title {
 
-  font-size: clamp(6rem, 28vw, 20rem);
+  font-size: clamp(4rem, 21vw, 26rem);
   transform: translateX(4%) translateY(20%);
   font-family: panchang;
 
@@ -228,7 +228,7 @@
 }
 
 .hero-boxes {
-  width: 150%;
+  width: 100%;
   font-family: 'panchang';
 
   display: flex;
@@ -240,7 +240,7 @@
 }
 
 .hero-box {
-  flex: 1;
+  flex: 3;
   border-radius: 1.5rem;
   padding: clamp(1rem, 2vw, 2rem);
   color: white;
