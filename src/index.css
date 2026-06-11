@@ -1,130 +1,3 @@
-.hero-section {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-size: cover;
-  background-position: center;
-}
-
-/* Video */
-
-.video-wrapper {
-  position: absolute;
-  inset: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  pointer-events: none;
-}
-
-.earphone-video {
-  width: min(65vw, 850px);
-  height: auto;
-  object-fit: contain;
-
-  filter: blur(0px);
-}
-
-/* Content */
-
-.hero-content {
-  position: relative;
-  z-index: 5;
-
-  width: min(90%, 1400px);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: clamp(1rem, 2vw, 2rem);
-}
-
-/* Heading */
-
-.hero-title {
-  font-size: clamp(6rem, 28vw, 25rem);
-  transform: translateX(4%) translateY(8%);
-  font-family: 'Poppins', sans-serif;
-
-  font-weight: 600;
-  letter-spacing: 0.35em;
-  opacity: 0.9;
-  text-transform: uppercase;
-
-  color: white;
-  margin: 0;
-
-  text-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-}
-
-/* Boxes Container */
-
-.hero-boxes {
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-  gap: clamp(1rem, 3vw, 3rem);
-
-  margin-top: clamp(1rem, 3vw, 3rem);
-}
-
-/* Individual Box */
-
-.hero-box {
-  flex: 1;
-  border-radius: 1.5rem;
-  padding: clamp(1rem, 2vw, 2rem);
-  color: white;
-}
-
-.hero-box h3 {
-  font-size: clamp(1.1rem, 2vw, 1.6rem);
-  margin-bottom: 0.75rem;
-}
-
-.hero-box p {
-  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
-  line-height: 1.7;
-  opacity: 0.85;
-}
-
-/* Tablet */
-
-@media (max-width: 900px) {
-  .hero-boxes {
-    flex-direction: column;
-    width: min(90%, 600px);
-  }
-
-  .earphone-video {
-    width: 80vw;
-  }
-}
-
-/* Mobile */
-
-@media (max-width: 600px) {
-  .hero-section {
-    padding: 2rem 1rem;
-  }
-
-  .hero-title {
-    letter-spacing: 0.15em;
-  }
-
-  .earphone-video {
-    width: 95vw;
-  }
-}
-
 /* =========================
    GLOBAL CINEMATIC OVERLAY
    ========================= */
@@ -166,4 +39,58 @@ body::after {
   z-index: 9998;
 
   backdrop-filter: blur(var(--blur-strength));
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("./assets/fonts/ClashDisplay-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("./assets/fonts/ClashDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("./assets/fonts/ClashDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("./assets/fonts/ClashDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Panchang";
+  src: url("./assets/fonts/Panchang-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Panchang";
+  src: url("./assets/fonts/Panchang-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Panchang";
+  src: url("./assets/fonts/Panchang-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Panchang";
+  src: url("./assets/fonts/Panchang-Extrabold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
 }

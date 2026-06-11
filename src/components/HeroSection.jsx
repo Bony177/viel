@@ -59,17 +59,26 @@ function HeroSection() {
 
       <div className="hero-content">
         <div className="hero-content-inner">
-          <h1 className="hero-title">VIEL</h1>
+          <h1 className="hero-title">VEIL</h1>
 
           <div className="hero-boxes">
             <div className="hero-box">
-              <h3>P</h3>
-              <p>Exp</p>
+              <h3>SOUND REDEFINED</h3>
+              <p>
+                Experience audio that adapts effortlessly to your lifestyle with
+                exceptional clarity, lasting comfort, and seamless connectivity.
+                From your morning commute and focused work sessions to
+                late-night listening and moments of escape, VIEL is engineered
+                to move with you. Every detail is designed to deliver immersive
+                sound, intuitive performance, and all-day reliability, ensuring
+                every beat, call, and conversation feels richer, clearer, and
+                more connected wherever life takes you.
+              </p>
             </div>
 
             <div className="hero-box">
-              <h3>Designed for Comfort</h3>
-              <p>Lig</p>
+              <h3>D</h3>
+              <p>L</p>
             </div>
           </div>
         </div>
