@@ -1,0 +1,46 @@
+/* Fog Video Bridge (Transition Layer Between Sections) */
+.fog-bridge {
+  position: absolute;
+  top: calc(100vh - 700px); /* Half overlaps Hero, half overlaps Second Section */
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  pointer-events: none;
+  z-index: 50;
+  overflow: visible;
+  background: transparent;
+}
+
+.fog-bridge-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: transparent;
+  display: block;
+  opacity: 0.7; /* Adjust fog visibility (0-1) */
+  filter: grayscale(0.5) brightness(1.1) blur(15px);
+  animation: fog-drift 15s ease-in-out infinite alternate;
+}
+
+@keyframes fog-drift {
+  0% {
+    transform: translateX(0) scaleX(1);
+  }
+  100% {
+    transform: translateX(2%) scaleX(1.05);
+  }
+}
+
+/* Fog Bridge Adjustment Guide */
+/* - top: 100vh (at Hero end), adjust to move up/down */
+/* - height: 300px (fog thickness), increase for taller fog */
+/* - opacity: 0.3 (subtle) to 1 (prominent) */
+/* - blur: increase for softer, decrease for sharper fog */
+/* - grayscale: 0 (color) to 1 (full grayscale) */
+
+@media (max-width: 900px) {
+  .fog-bridge {
+    height: 250px;
+  }
+}
