@@ -41,8 +41,8 @@ function HeroSection() {
       }}
     >
       <Navbar />
-      <div className="beam-video-wrapper">
-        <video className="beam-video" autoPlay muted loop playsInline>
+      <div className="hero-beam-wrapper">
+        <video className="hero-beam-video" autoPlay muted loop playsInline>
           <source src={backgroundBeam} type="video/webm" />
         </video>
       </div>

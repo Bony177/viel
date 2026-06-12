@@ -71,8 +71,7 @@
 
   z-index: 5;
 }
-
-.beam-video-wrapper {
+.hero-beam-wrapper {
  position: absolute;
  pointer-events: none;
 
@@ -92,7 +91,7 @@
 
   /*mix-blend-mode: screen;*/
 }
-  .beam-video {
+ .hero-beam-video {
   pointer-events: none;
   filter: grayscale(0.6) brightness(1.3);
 }

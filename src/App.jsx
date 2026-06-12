@@ -1,7 +1,13 @@
 import HeroSection from "./components/HeroSection";
+import SecondSection from "./components/SecondSection";
 
 function App() {
-  return <HeroSection />;
+  return (
+    <>
+      <HeroSection />
+      <SecondSection />
+    </>
+  );
 }
 
 export default App;
